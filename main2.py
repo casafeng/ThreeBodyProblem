@@ -94,9 +94,9 @@ def update(i):
     return line1, dot1, line2, dot2, line3, dot3
 
 # ------------------------------------------- #
-anim = FuncAnimation(fig, update, frames=len(t_eval), interval=10, blit=False)
+anim = FuncAnimation(fig, update, frames=len(t_eval), interval=30, blit=False)
 
 # SAVE GIF (works on macOS)
-anim.save("three_body.gif", dpi=100, writer=PillowWriter(fps=30))
+anim.save("three_body.gif", dpi=100, writer=PillowWriter(fps=60))
 
 print("Saved as three_body.gif")
